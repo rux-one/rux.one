@@ -2,3 +2,5 @@
 node_modules
 public/archives
 public/20**
+public/index.html
+db.json
