@@ -254,6 +254,9 @@ a.footer-link:focus {
 .stackoverflow {
   fill: #ca7516;
 }
+.mastodon {
+  fill: #6364ff;
+}
 .nanobar {
   left: 0;
 }
