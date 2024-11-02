@@ -19,6 +19,15 @@ jobs:
       - name: Build project
         run: npm run build  
 
+      - name: Create SSH key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
       - name: Deploy to server
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -26,7 +35,5 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
           SERVER_PORT: ${{ secrets.SERVER_PORT }}
-        run: |
-          echo "$SSH_PRIVATE_KEY" > private_key.pem
-          chmod 600 private_key.pem
-          scp -o -P $SERVER_PORT StrictHostKeyChecking=no -i private_key.pem -r ./public/* $USERNAME@$SERVER_IP:$REMOTE_PATH
+        run:
+          rsync -rav --delete -e 'ssh -p $SERVER_PORT' public/ $USERNAME@$SERVER_IP:$REMOTE_PATH
