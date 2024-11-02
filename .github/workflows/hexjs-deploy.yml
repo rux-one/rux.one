@@ -3,7 +3,7 @@ name: Build and Deploy Hex.js
 on:
   push:
     branches:
-      - main  # Adjust this to your default branch
+      - main
 
 jobs:
   build:
@@ -25,7 +25,8 @@ jobs:
           SERVER_IP: ${{ secrets.SERVER_IP }}
           USERNAME: ${{ secrets.USERNAME }}
           REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
         run: |
           echo "$SSH_PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
-          scp -o StrictHostKeyChecking=no -i private_key.pem -r ./public/* $USERNAME@$SERVER_IP:$REMOTE_PATH
+          scp -o -P $SERVER_PORT StrictHostKeyChecking=no -i private_key.pem -r ./public/* $USERNAME@$SERVER_IP:$REMOTE_PATH
