@@ -1,18 +1,18 @@
 #title in header
-title: "Bartlomiej Karalus"
+# title: "Page title"
+title: "I tinker, therefore I am..."
 
 #main info
 #owner
-# owner: "Bart Karalus"
-email: bart@bforge.co
-info: "I am a software engineer & general tinkerer based in Poland "
-#description
-desc: "This is an imaginary place where all my ideas and projects get forged into some form of reality. I am also using this name for any software contracting formalities. ..."
+owner: "Bart Karalus"
+email: bart.karalus@proton.me
+info: "Software engineer & general tinkerer based in Poland "
+desc: "This is an imaginary lab where all my ideas and projects get forged into some form of reality."
 
 #menu
 menu:
-  Works: /Works
-  About: /About
+  Projects: /projects
+  About: /about
 
 #index/main page max show posts (in number)
 max_post: 4
