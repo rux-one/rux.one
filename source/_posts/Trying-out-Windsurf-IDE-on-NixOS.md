@@ -43,4 +43,6 @@ What I did was:
 
 This way the only step I need to do on a fresh OS is to download the binary, everything else rebuilds automatically with `nixos-rebuild`.
 
+![Windsurf on NixOS](/images/windsurf-nixos.png)
+
 Once I understand the nix packaging more I might try to do it properly, but I imagine by then it will appear in the package repository thanks to people smarter than me. 🤓
