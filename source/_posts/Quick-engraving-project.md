@@ -4,12 +4,12 @@ date: 2024-08-27 20:36:18
 tags:
 ---
 
-![Alt text](/images/sudo-rm-engraved-poster-0.jpg "a title")
+![Quick engraving job 1](/images/sudo-rm-engraved-poster-0.jpg "quick engraving job 1")
 
 I am a simple person, I see a funny picture and I want it on my wall.
 
-![Alt text](/images/sudo-rm-engraved-poster-1.jpg "a title")
-![Alt text](/images/sudo-rm-engraved-poster-2.jpg "a title")
+![Quick engraving job 2](/images/sudo-rm-engraved-poster-1.jpg "quick engraving job 2")
+![Quick engraving job 3](/images/sudo-rm-engraved-poster-2.jpg "quick engraving job 3")
 
 Aaand it's done. Engraved & stained. 
 
