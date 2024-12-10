@@ -1,6 +1,6 @@
 ---
 title: Writing programs on a piece of paper was hard. 🖊️🧻
-date: 2024-12-09 09:22:12
+date: 2024-12-09 09:22
 tags:
 ---
 

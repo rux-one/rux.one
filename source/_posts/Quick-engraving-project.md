@@ -1,6 +1,6 @@
 ---
 title: Quick engraving project ⚡
-date: 2024-08-27 20:36:18
+date: 2024-08-27 20:36
 tags:
 ---
 
