@@ -16,7 +16,7 @@ GenAI has revolutionised coding, making features like multi-select and context c
 
 What if one day you need to make a dirty change over SSH? I could not be bothered to set up the whole toolchain. Small change on a small raspberry board? Same.
 
-It appears crucial to maintain proficiency in basic tools for situations where advanced options aren't available.
+It appears crucial to [maintain proficiency in basic tools](https://rux.one/2024/11/25/Learning-vim-proper/) for situations where advanced options aren't available.
 
 ![Paper coding](/images/coding-on-paper.jpg "Writing programs on a piece of paper")
 
