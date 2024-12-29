@@ -14,6 +14,7 @@ InfiniTime has quickly become my daily firmware but I could see room for improve
 Today I finally managed to understand how the apps are built into the firmware and made the following progress:
 - added new app to the apps list
 - added a new fontawesome glyph to the build
+- how to build & run [InfiniSim](https://github.com/InfiniTimeOrg/InfiniSim "InfiniTime Simulator")
 
 {% html5video %} /videos/hello-pinetime.mp4 {% endhtml5video %}
 
