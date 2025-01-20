@@ -12,6 +12,7 @@ desc: "This is an imaginary lab where all my ideas and projects get forged into 
 #menu
 menu:
   Projects: /projects
+  Recommended: /recommended
   About: /about
 
 #index/main page max show posts (in number)
