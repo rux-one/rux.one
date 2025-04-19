@@ -1,0 +1,30 @@
+<!-- TUI-style footer with status bar -->
+<div class="tui-footer" box-="double">
+  <div class="tui-status-bar">
+    <div class="tui-copyright">
+      <span is-="badge" variant-="surface2">© <%= new Date().getFullYear() %></span>
+      <span><%= config.author || config.title %></span>
+    </div>
+    <div class="tui-theme-toggle">
+      <span is-="badge" variant-="teal">Theme: TUI</span>
+      <span is-="badge" variant-="pink">Catppuccin</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tui-footer {
+    margin-top: 3lh;
+    padding: 0.5lh 1ch;
+  }
+  .tui-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tui-copyright, .tui-theme-toggle {
+    display: flex;
+    gap: 1ch;
+    align-items: center;
+  }
+</style>
