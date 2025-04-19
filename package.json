@@ -27,5 +27,9 @@
     "hexo-tag-embed": "^1.0.0",
     "hexo-tag-html5video": "^1.0.3",
     "hexo-theme-landscape": "^1.0.0"
+  },
+  "devDependencies": {
+    "@webtui/css": "^0.0.3",
+    "@webtui/theme-catppuccin": "^0.0.2"
   }
 }
