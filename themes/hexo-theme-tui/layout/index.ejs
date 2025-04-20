@@ -18,14 +18,14 @@
   </div>
 
   <div class="tui-window-content" box-="double">
-    <ul marker-="tree" class="tui-tree">
+    <ul marker-="open tree">
       <% 
       var posts = site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
       posts.forEach(function(post, index){ 
       %>
         <li>
           <div class="post-item">
-            <span is-="badge" variant-="sapphire"><%- full_date(post.date, 'll') %></span>
+            <span is-="badge" variant-="sapphire"><%- full_date(post.date, 'MMM DD YYYY') %></span>
             <a href="<%- url_for(post.path) %>">
               <% if (post.title == "") { %>
                 no title
@@ -90,7 +90,7 @@
     display: inline-flex;
     align-items: center;
     gap: 1ch;
-    margin: 0.5lh 0;
+    margin: 0 0;
     white-space: nowrap;
   }
   .post-item a {
