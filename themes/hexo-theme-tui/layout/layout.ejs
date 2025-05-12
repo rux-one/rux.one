@@ -110,6 +110,19 @@
   <%- css('css/themes/catppuccin.css') %> -->
 
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .main-archive-box {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+
     .header { 
       display: flex;
       justify-content: space-between; 
@@ -142,25 +155,15 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div>
+  <%- partial('partial/header') %>
+  <%- body %>
 
-        <%- partial('partial/header') %>
-        <div class="trans">
-          <%- body %>
-        </div>
-        <% if(config.search){ %>
-          <%- partial('partial/search') %>
-        <% } %>
+  <% if(config.search){ %>
+    <%- partial('partial/search') %>
+  <% } %>
 
-        <%- partial('partial/footer') %>
-      </div>
-
-    </div>
-
-  </div>
-  <script src="<%- theme.nanobar %>"></script>
+  <%- partial('partial/footer') %>
+  <!-- <script src="<%- theme.nanobar %>"></script>
 
   <script>
     var options = {
@@ -171,8 +174,7 @@
     nanobar.go(30);
     nanobar.go(76);
     nanobar.go(100);
-  </script>
+  </script> -->
 
 </body>
-
 </html>
