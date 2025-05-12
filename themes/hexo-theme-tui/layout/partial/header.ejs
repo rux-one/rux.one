@@ -10,5 +10,12 @@
         <a href="<%- url_for(theme.menu[i]) %>" is-="button" variant-="yellow" size-="small"><%= i %></a>
       <% } %>
     <% } %>
+    <% if (theme.email) { %>
+      <% if (typeof obfuscate === "function") { %>
+        <a href="mailto:<%- obfuscate(theme.email) %>" target="_blank" is-="button" variant-="blue" size-="small">Email</a>
+      <% } else { %>
+        <a href="mailto:<%= theme.email %>" target="_blank" is-="button" variant-="blue" size-="small">Email</a>
+      <% } %>
+    <% } %>
   </div>
 </div>
