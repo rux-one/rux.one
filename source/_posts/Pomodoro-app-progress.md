@@ -8,6 +8,6 @@ Few more hours of dibbling with the firmware and I am now confident I can make t
 
 The progress is looking good and can be viewed in the following video:
 
-{% html5video %} /videos/pinetime-pomodoro-progress.mp4 {% endhtml5video %}
+{% html5video auto 500px %} /videos/pinetime-pomodoro-progress.mp4 {% endhtml5video %}
 
 Next step is to see if it works on the actual device.

@@ -14,16 +14,21 @@
   </div>
   <div id="content">
 
-    › ls -l <br>
+    › ls -l <%= is_archive() ? '' : '| head -n ' + (theme.max_post+1) %>
+    <br>
+    total <%= site.posts.length %>
     <br>
     <ul marker-="open tree">
       <% 
-        var posts = site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
+        var posts = is_archive() ? 
+          site.posts.sort('date', 'desc').toArray() : 
+          site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
         posts.forEach(function(post, index){ 
       %>
       <li><span is-="badge" cap-="ribbon triangle"><%- full_date(post.date, 'MMM DD YYYY') %></span> <a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
       <% }) %>
     </ul>
+    (...)
   </div>
 
   <div class="footer text-right">
