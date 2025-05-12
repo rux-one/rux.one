@@ -1,106 +1,32 @@
-<!-- Main information section with TUI-style terminal window -->
-<div class="tui-terminal" box-="square">
-  <div class="tui-terminal-header">
-    <span is-="badge" variant-="peach">profile.txt</span>
+<div box-="square contain:!top">
+  <div class="header">
+    <span is-="badge" variant-="background0"><h3>Intro</h3></span>
   </div>
-  <div class="tui-terminal-content">
-    <h2><%= theme.owner %></h2>
-    <p><%= theme.info %></p>
-    <p><%= theme.desc %></p>
+  <div id="content">
+    › echo $GREETING<br><br>
+    <%= theme.greeting %>
   </div>
 </div>
 
-<!-- Recent Posts section with TUI-style window -->
-<div class="tui-window">
-  <div class="tui-window-header">
-    <h3>Recent Posts</h3>
-    <span is-="badge" variant-="green">active</span>
+<div box-="square contain:none">
+  <div class="header">
+    <span is-="badge" variant-="background0"><h2>Archive</h2></span>
   </div>
+  <div id="content">
 
-  <div class="tui-window-content" box-="double">
+    › ls -l <br>
+    <br>
     <ul marker-="open tree">
       <% 
-      var posts = site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
-      posts.forEach(function(post, index){ 
+        var posts = site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
+        posts.forEach(function(post, index){ 
       %>
-        <li>
-          <div class="post-item">
-            <span is-="badge" variant-="sapphire"><%- full_date(post.date, 'MMM DD YYYY') %></span>
-            <a href="<%- url_for(post.path) %>">
-              <% if (post.title == "") { %>
-                no title
-              <% } else { %>
-                <%- post.title %>
-              <% } %>
-            </a>
-          </div>
-        </li>
+      <li><span is-="badge" cap-="ribbon triangle"><%- full_date(post.date, 'MMM DD YYYY') %></span> <a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
       <% }) %>
     </ul>
   </div>
-  
-  <div class="tui-window-footer">
-    <a href="<%= config.root %>archives" is-="button" box- variant-="lavender">All Posts</a>
-    <span is-="badge" variant-="surface2"><%= site.posts.length %> total posts</span>
-  </div>
-</div>
 
-<style>
-  /* Terminal styling */
-  .tui-terminal {
-    margin-bottom: 2lh;
-    padding: 0;
-    overflow: hidden;
-  }
-  .tui-terminal-header {
-    background-color: var(--surface0);
-    padding: 0.25lh 1ch;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .tui-terminal-content {
-    padding: 1lh 1ch;
-  }
-  
-  /* Window styling */
-  .tui-window {
-    margin-bottom: 2lh;
-  }
-  .tui-window-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5lh;
-  }
-  .tui-window-header h3 {
-    margin: 0;
-  }
-  .tui-window-content {
-    padding: 1lh 1ch;
-  }
-  .tui-window-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1lh;
-  }
-  
-  /* Post items */
-  .post-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 1ch;
-    margin: 0 0;
-    white-space: nowrap;
-  }
-  .post-item a {
-    white-space: normal;
-    display: inline-block;
-  }
-  
-  /* Using built-in tree styling */
-  .tui-tree {
-    list-style-type: none;
-    padding-left: 0;
-  }
-</style>
+  <div class="footer text-right">
+    <a is-="badge" variant-="background0" href="<%= config.root %>archives">See all <%= site.posts.length %> posts</a>
+  </div>
+</div>   

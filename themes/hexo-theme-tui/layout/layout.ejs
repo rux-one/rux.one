@@ -3,11 +3,9 @@
 
 <head>
 
-  <!-- Minima -->
-  <!-- Hexo theme created by @adisaktijrs -->
+  <!-- WebTUI Hexo Theme -->
+  <!-- Hexo theme created by @rux1 thanks to https://webtui.ironclad.sh -->
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
 
   <%
@@ -69,7 +67,7 @@
   <meta name="twitter:description" content="<%= page.description %>">
   <% } else if (page.content){ %>
   <meta name="twitter:description" content="<%= strip_html(page.content).replace(/\n/g, " ").replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
-  <!-- <% } else { %> -->
+  <% } else { %>
   <meta name="twitter:description" content="<%= config.description %>">
   <% } %>
   <% if (is_post() || is_page()) { %>
@@ -83,18 +81,25 @@
   <% } %>
   <meta name="twitter:url" content="<%= url.replace(/index\.html$/, '').replace(/index\.html$/, '') %>" />
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Preload fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <%- css('css/base.css') %>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@webtui/css/dist/full.css"
+  />
+  <link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@webtui/theme-catppuccin@0.0.3/dist/index.css"
+  />
+  <link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@webtui/theme-gruvbox@0.0.1/dist/index.css"
+  />
+
+  <!-- <%- css('css/base.css') %>
   <%- css('css/full.css') %>
   <%- css('css/components/badge.css') %>
   <%- css('css/components/button.css') %>
@@ -102,10 +107,28 @@
   <%- css('css/components/popover.css') %>
   <%- css('css/components/typography.css') %>
   <%- css('css/utils/box.css') %>
-  <%- css('css/themes/catppuccin.css') %>
+  <%- css('css/themes/catppuccin.css') %> -->
+
+  <style>
+    .header { 
+      display: flex;
+      justify-content: space-between; 
+    }
+    .text-right { 
+      text-align: right;
+    }
+    #buttons { 
+      display: flex; 
+      justify-content: flex-end; 
+    }
+    footer > .column {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
 
   <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
   <link rel="icon" type="image/png" href="<%- theme.favicon %>">
 
   <% if (theme.picjs) { %>
