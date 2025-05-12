@@ -1,5 +1,5 @@
 ---
-title: It's actually cheaper to buy parts from China than to go to your local hardware store
+title: It might be cheaper to get parts from China than from local hardware store
 date: 2025-03-13 19:31
 tags:
 ---
@@ -22,6 +22,7 @@ Do I feel bad for not supporting local manufacturers by overpaying slightly? A b
 
 Interesting times ahead of us, Europeans, eh?
 
-![Wooden knobs on a laser cutter](/images/wooden-knobs-cnc.jpg)
+{% img /images/wooden-knobs-cnc.jpg 640 %}
+
 
 Curious about the actual project? It's actually going to be a toy for our friends' toddler. I will drop in a separate post when it's ready.

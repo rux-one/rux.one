@@ -1,5 +1,5 @@
 ---
-# title: Current endeavors
+title: Current endeavors
 date: 2024-11-30 20:16:43
 ---
 
