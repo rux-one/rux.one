@@ -106,3 +106,18 @@ deploy:
   ignore_errors: false
 
 search: false
+
+# RSS/Atom
+feed:
+  enable: true
+  type: rss2
+  path: feed.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
