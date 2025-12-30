@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<%= config.language %>" data-webtui-theme="catppuccin-mocha">
+<html lang="<%= config.language %>" data-webtui-theme="gruvbox-dark" id="root">
 
 <head>
 
@@ -160,6 +160,10 @@
     .main-archive-box a {
       /* color: inherit; */
     }
+    #light-dark-switch {
+      cursor: pointer;
+      margin-left: 1rem;
+    }
   </style>
 
   <!-- Favicon
@@ -199,6 +203,19 @@
     nanobar.go(76);
     nanobar.go(100);
   </script> -->
+
+  <script>
+    const root = document.getElementById('root');
+    const darkLightToggle = document.getElementById('light-dark-switch');
+
+    darkLightToggle.addEventListener('click', () => {
+      if (root.getAttribute('data-webtui-theme') === 'gruvbox-dark') {
+        root.setAttribute('data-webtui-theme', 'gruvbox-light');
+      } else {
+        root.setAttribute('data-webtui-theme', 'gruvbox-dark');
+      }
+    });
+  </script>
 
 </body>
 </html>

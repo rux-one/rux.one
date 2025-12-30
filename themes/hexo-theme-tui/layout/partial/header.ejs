@@ -1,6 +1,11 @@
 <div box-="square contain:!top">
   <div class="header">
-    <span is-="badge" variant-="background0"><h1><a style="color: inherit" href="<%= config.root %>"><%= config.title %></a></h1></span>
+    <span is-="badge" variant-="background0">
+        <h1><a style="color: inherit" href="<%= config.root %>">
+        <%= config.title %>
+      </a></h1>
+      <span id="light-dark-switch">🔦 ⇠ click me!</span>
+    </span>
   </div>
   <div class="text-right">
     <a href="<%= config.root %>" is-="button" variant-="blue" size-="small">Home</a>
