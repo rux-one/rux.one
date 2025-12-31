@@ -233,14 +233,26 @@
     const root = document.getElementById('root');
     const darkLightToggle = document.getElementById('light-dark-switch');
 
+    window.addEventListener('DOMContentLoaded', () => {
+      const theme = localStorage.getItem('webtui-theme');
+      if (theme) {
+        root.setAttribute('data-webtui-theme', theme);
+        darkLightToggle.checked = theme === 'gruvbox-light';
+      }
+    });
+
     darkLightToggle.addEventListener('click', () => {
 
       setTimeout(() => {
         if (root.getAttribute('data-webtui-theme') === 'gruvbox-dark') {
-          root.setAttribute('data-webtui-theme', 'gruvbox-light');
+          const newTheme = 'gruvbox-light';
+          root.setAttribute('data-webtui-theme', newTheme);
+          localStorage.setItem('webtui-theme', newTheme);
           darkLightToggle.checked = true;
         } else {
-          root.setAttribute('data-webtui-theme', 'gruvbox-dark');
+          const newTheme = 'gruvbox-dark';
+          root.setAttribute('data-webtui-theme', newTheme);
+          localStorage.setItem('webtui-theme', newTheme);
           darkLightToggle.checked = false;
         }
       }, 100);
