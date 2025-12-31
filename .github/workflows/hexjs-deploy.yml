@@ -27,6 +27,6 @@ jobs:
           echo "${{secrets.SSH_PRIVATE_KEY}}" > deploy_key
           chmod 600 ./deploy_key
           rsync -chrlvzi --delete \
-            -e 'ssh -ivv ./deploy_key -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no' \
+            -e 'ssh -vv -i ./deploy_key -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no' \
             --exclude '/deploy_key' \
             ${{ env.SRC }} ${{ env.DEST }}
