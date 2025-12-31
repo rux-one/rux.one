@@ -1,10 +1,15 @@
-<div box-="square contain:!top">
+<div box-="square" shear-="top" class="mt-2">
   <div class="header">
     <span is-="badge" variant-="background0">
-        <h1><a style="color: inherit" href="<%= config.root %>">
-        <%= config.title %>
-      </a></h1>
-      <span id="light-dark-switch">🔦 ⇠ click me!</span>
+      <h1>
+        <a style="color: inherit" href="<%= config.root %>">
+          <%= config.title %>
+        </a>
+      </h1>
+      
+      <div class="mh-1" is-="separator" direction-="vertical"></div>
+      
+      <span><input id="light-dark-switch" type="checkbox" is-="switch" /></span>
     </span>
   </div>
   <div class="text-right">

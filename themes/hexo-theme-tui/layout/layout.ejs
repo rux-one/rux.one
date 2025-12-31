@@ -92,10 +92,6 @@
   />
   <link 
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@webtui/theme-catppuccin@0.0.3/dist/index.css"
-  />
-  <link 
-    rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@webtui/theme-gruvbox@0.0.1/dist/index.css"
   />
 
@@ -107,7 +103,7 @@
   <%- css('css/components/popover.css') %>
   <%- css('css/components/typography.css') %>
   <%- css('css/utils/box.css') %>
-  <%- css('css/themes/catppuccin.css') %> -->
+  <%- css('css/themes/gruvbox.css') %> -->
 
   <style>
     body {
@@ -160,9 +156,38 @@
     .main-archive-box a {
       /* color: inherit; */
     }
+
+    div[box-="square"] {
+      padding-left: 2ch;
+      padding-right: 2ch;
+    }
+
     #light-dark-switch {
       cursor: pointer;
-      margin-left: 1rem;
+    }
+
+    .mt-2 {
+      margin-top: 2ch;
+    }
+    .mt-1 {
+      margin-top: 1ch;
+    }
+
+    .mv-1 {
+      margin-top: 1ch;
+      margin-bottom: 1ch;
+    }
+    .mh-1 {
+      margin-left: 1ch;
+      margin-right: 1ch;
+    }
+    .mv-2 {
+      margin-top: 2ch;
+      margin-bottom: 2ch;
+    }
+    .mh-2 {
+      margin-left: 2ch;
+      margin-right: 2ch;
     }
   </style>
 
@@ -209,11 +234,16 @@
     const darkLightToggle = document.getElementById('light-dark-switch');
 
     darkLightToggle.addEventListener('click', () => {
-      if (root.getAttribute('data-webtui-theme') === 'gruvbox-dark') {
-        root.setAttribute('data-webtui-theme', 'gruvbox-light');
-      } else {
-        root.setAttribute('data-webtui-theme', 'gruvbox-dark');
-      }
+
+      setTimeout(() => {
+        if (root.getAttribute('data-webtui-theme') === 'gruvbox-dark') {
+          root.setAttribute('data-webtui-theme', 'gruvbox-light');
+          darkLightToggle.checked = true;
+        } else {
+          root.setAttribute('data-webtui-theme', 'gruvbox-dark');
+          darkLightToggle.checked = false;
+        }
+      }, 100);
     });
   </script>
 
