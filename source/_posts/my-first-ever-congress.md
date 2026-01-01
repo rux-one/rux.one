@@ -88,4 +88,4 @@ I am so going to recommend them to some other friends to try get them some more 
 
 <br>
 
-Find out more about the congress here → https://events.ccc.de/congress/2025/infos/sartpage.html
+Find out more about the congress → [here](https://events.ccc.de/congress/2025/infos/sartpage.html)
