@@ -2,6 +2,8 @@
 title: LA CTF 2026 - a web challenge writeup [blogler]
 date: 2026-02-08 08:02
 tags: ctf, writeup, security, web
+thumbnail: /images/thumb_lactf.png
+excerpt: Exploiting YAML anchor aliasing and a post-validation string transform to sneak a path traversal past the filter.
 ---
 
 ## What is this challenge?

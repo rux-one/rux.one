@@ -1,0 +1,33 @@
+<div box-="square" shear-="top">
+  <div class="header">
+    <span is-="badge" variant-="background0"><h3>Intro</h3></span>
+  </div>
+  <div id="content">
+    › echo $GREETING<br><br>
+    <%= theme.greeting %>
+  </div>
+</div>
+
+<div box-="square" class="main-archive-box" shear-="top">
+  <div class="header">
+    <span is-="badge" variant-="background0"><h2>Archive</h2></span>
+  </div>
+  <div id="content">
+
+    › ls -l foo%>
+    <br>
+    total <%= site.posts.length %>
+    <br>
+    <ul marker-="open tree">
+      <% 
+        var posts = is_archive() ? 
+          site.posts.sort('date', 'desc').toArray() : 
+          site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
+        posts.forEach(function(post, index){ 
+      %>
+      <li><span is-="badge" cap-="ribbon triangle"><%- full_date(post.date, 'MMM DD YYYY') %></span> <a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
+      <% }) %>
+    </ul>
+    (...)
+  </div>
+</div>   

@@ -1,6 +1,7 @@
 ---
 title: Breathing new life into my Kindle with KOReader
 date: 2025-05-11 19:21
+excerpt: Installed KOReader on an 8-year-old Kindle - got rid of lock screen ads, added FTP sync, and gained support for EPUBs.
 tags:
 ---
 

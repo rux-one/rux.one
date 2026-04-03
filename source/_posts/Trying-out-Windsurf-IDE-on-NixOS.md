@@ -1,6 +1,7 @@
 ---
 title: Trying out Windsurf IDE on NixOS ❄️
 date: 2024-11-30 20:27
+excerpt: A quick semi-nix approach to running Windsurf IDE on NixOS using a manual binary download and home-manager config.
 tags:
 ---
 

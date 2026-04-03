@@ -150,11 +150,17 @@
     }
     .main-archive-box img {
       max-width: 100%;
-      margin-top: 1lh;
-      margin-bottom: 1lh;
+      margin-bottom: 1.5lh;
     }
-    .main-archive-box a {
-      /* color: inherit; */
+    .main-archive-box .post-entry {
+      color: var(--foreground0);
+    }
+    .main-archive-box .post-entry .post-title {
+      color: var(--gb-blue, LinkText);
+    }
+    .main-archive-box .post-entry:hover .post-title {
+      color: var(--gb-aqua, LinkText);
+      text-decoration: underline;
     }
 
     div[box-="square"] {

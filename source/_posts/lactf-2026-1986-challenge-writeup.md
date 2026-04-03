@@ -2,6 +2,8 @@
 title: LA CTF 2026 - the 1986 challenge writeup
 date: 2026-02-08 08:01
 tags: ctf, writeup, security, reverse engineering
+thumbnail: /images/thumb_lactf.png
+excerpt: Reversing a tiny MS-DOS binary from a floppy disk image - cracking a 20-bit LFSR seed by brute force.
 ---
 
 The task intro was very informative: 

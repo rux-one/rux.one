@@ -1,6 +1,7 @@
 ---
 title: Hello PineTime!
 date: 2024-12-29 15:07
+excerpt: First steps with the Pine64 smartwatch - understanding the InfiniTime firmware and starting work on a custom Pomodoro app.
 tags:
 ---
 

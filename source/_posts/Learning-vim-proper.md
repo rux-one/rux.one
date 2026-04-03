@@ -1,6 +1,7 @@
 ---
 title: Learning vim proper
 date: 2024-11-25 08:11
+excerpt: Comparing ways to actually learn Vim - from the built-in tutor to browser games to daily-driving a Vim plugin in your IDE.
 tags:
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Pomodoro app progress
 date: 2024-12-31 14:13
+excerpt: Learning about InfiniTime controllers, timers, and FreeRTOS queues - the Pomodoro app is taking shape in the simulator.
 tags:
 ---
 

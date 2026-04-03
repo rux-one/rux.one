@@ -1,6 +1,7 @@
 ---
 title: Quick engraving project ⚡
 date: 2024-08-27 20:36
+excerpt: Saw a funny picture, laser-engraved it on wood, stained it, and put it on the wall. Simple as that.
 tags:
 ---
 

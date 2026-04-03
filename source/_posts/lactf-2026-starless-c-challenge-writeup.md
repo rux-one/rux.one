@@ -2,6 +2,8 @@
 title: LA CTF 2026 - the starless-c writeup
 date: 2026-02-08 08:02
 tags: ctf, writeup, security, reverse engineering
+thumbnail: /images/thumb_lactf.png
+excerpt: A maze hidden inside 58 ELF LOAD segments - solving a sliding puzzle of crash rooms with BFS to reach the flag.
 ---
 
 ## What is this?

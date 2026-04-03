@@ -1,6 +1,7 @@
 ---
 title: My fermentation chamber goes into maintenance mode 
 date: 2025-02-03 18:31
+excerpt: Five batches in, my Peltier-based fermentation chamber is due for cable management and sealing improvements.
 tags:
 ---
 

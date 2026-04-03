@@ -1,6 +1,7 @@
 ---
 title: Writing programs on a piece of paper was hard. 🖊️🧻
 date: 2024-12-09 09:22
+excerpt: From Notepad to AI-assisted IDEs - a reflection on how coding tools evolved and why basic proficiency in Vim still matters.
 tags:
 ---
 

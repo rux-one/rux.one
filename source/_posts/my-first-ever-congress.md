@@ -2,6 +2,8 @@
 title: My first ever congress 
 date: 2025-12-31 16:31
 tags:
+thumbnail: /images/thumb_39c3.png
+excerpt: Four days at 39C3 in Hamburg - hacking in assemblies, volunteering as an Engel, and discovering a metal band along the way.
 ---
 
 # 39c3 Power cycles

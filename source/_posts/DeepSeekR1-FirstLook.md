@@ -1,6 +1,7 @@
 ---
 title: DeepSeek-R1 first look 
 date: 2025-01-27 06:41
+excerpt: Testing DeepSeek-R1 locally and comparing its verbose chain-of-thought reasoning with Gemma 7B on a philosophical question.
 tags:
 ---
 
@@ -15,7 +16,7 @@ I posed a philosophical question: do staircases go up or down? Gemma 7B stubborn
 
 ![Gemma 7b being confident](/images/deep-seek-r1_2.jpeg)
 
-After a great internal debate, R1 concluded that — wait for it - it depends.
+After a great internal debate, R1 concluded that - wait for it - it depends.
 
 ![Deep Seek R1 thinking deeply](/images/deep-seek-r1_1.jpeg)
 

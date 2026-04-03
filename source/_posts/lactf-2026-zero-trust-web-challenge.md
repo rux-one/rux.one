@@ -2,6 +2,8 @@
 title: LA CTF 2026 - zero-trust web challenge
 date: 2026-02-08 08:05
 tags: ctf, writeup, security, reverse engineering
+thumbnail: /images/thumb_lactf.png
+excerpt: Shrinking the AES-GCM auth tag to one byte and brute-forcing 256 values to forge a cookie and read the flag.
 ---
 
 ## The setup

@@ -1,6 +1,7 @@
 ---
 title: It might be cheaper to get parts from China than from local hardware store
 date: 2025-03-13 19:31
+excerpt: Wooden knobs from AliExpress arrived in 5 days at half the local price - a small purchase that raises big questions about global manufacturing.
 tags:
 ---
 

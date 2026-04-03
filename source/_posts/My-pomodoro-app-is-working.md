@@ -1,6 +1,7 @@
 ---
 title: My pomodoro app is working!
 date: 2025-01-04 19:34
+excerpt: The custom Pomodoro timer is now running on real PineTime hardware with configurable work and break intervals.
 tags:
 ---
 

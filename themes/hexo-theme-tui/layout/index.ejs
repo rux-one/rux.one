@@ -10,24 +10,29 @@
 
 <div box-="square" class="main-archive-box" shear-="top">
   <div class="header">
-    <span is-="badge" variant-="background0"><h2>Archive</h2></span>
+    <span is-="badge" variant-="background0"><h2>Recent</h2></span>
   </div>
   <div id="content">
 
-    › ls -l <%= is_archive() ? '' : '| head -n ' + (theme.max_post+1) %>
+    › ls -lv <%= is_archive() ? '' : '| head -n ' + (theme.max_post+1) %>
     <br>
     total <%= site.posts.length %>
     <br>
-    <ul marker-="open tree">
       <% 
         var posts = is_archive() ? 
           site.posts.sort('date', 'desc').toArray() : 
           site.posts.sort('date', 'desc').limit(theme.max_post).toArray();
         posts.forEach(function(post, index){ 
       %>
-      <li><span is-="badge" cap-="ribbon triangle"><%- full_date(post.date, 'MMM DD YYYY') %></span> <a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
+      <a href="<%- url_for(post.path) %>" class="post-entry" style="display: flex; align-items: flex-start; gap: 0.75em; border-top: 1px solid var(--foreground2); padding: 0; padding-top: 1lh; text-decoration: none; cursor: pointer;">
+        <img src="<%- url_for(post.thumbnail || '/images/placeholder-tui.png') %>" alt="" style="width: 96px; height: auto; object-fit: cover;" />
+        <div style="display: flex; flex-direction: column;">
+          <span class="post-title"><%- post.title %></span>
+          <% if (post.excerpt) { %><div style="margin-top: 0.25em; font-weight: normal;"><%- post.excerpt %></div><% } %>
+          <div is-="badge" cap-="ribbon triangle" style="width: fit-content; margin-top: 0.35em;"><%- full_date(post.date, 'MMM DD YYYY') %></div>
+        </div>
+      </a>
       <% }) %>
-    </ul>
     (...)
   </div>
 
