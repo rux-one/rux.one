@@ -2,13 +2,14 @@
 title: "The LLM Demoscene Wave: A postcard from year 2035"
 date: 2026-06-19 10:51
 excerpt: Another year of living with LLMs passes by, and honest people are still trying to figure out what these constructs can actually be good for. I asked popular cloud models to shift 10 years into the future and reflect on the past decade to see what happened to the LLMs after we moved on to actually good alternatives. Here's the summary of what was the result of this experiment.
+thumbnail: /images/thumb_demoscene.png
 tags: llm, ai, future, demoscene, experiment
 ---
 
 <br>
 
-[3]
-![](https://notes.bforge.co/uploads/a8072696-5ab6-4b3b-b13c-5927b61a495a.png)
+[[3]](#ref-3)
+![](https://cdn.bforge.co/a8072696-5ab6-4b3b-b13c-5927b61a495a.png)
 
 
 Another year of living with LLMs passes by, and honest people are still trying to figure out what these constructs can actually be good for. 
@@ -29,7 +30,7 @@ I asked popular cloud models to shift 10 years into the future and reflect on th
 
 ## Squeezing the impossible out of limited resources
 
-Looking back from 2035, the decade between 2025 and 2035 is remembered as the "Prompt Era" of the demoscene - a period as chaotic, brilliant, and constraint-driven as the Amiga days[1]. Only this time, the hardware wasn't a Commodore 64 with very little RAM; it was an LLM with a context window and a few hundred tokens to spend.
+Looking back from 2035, the decade between 2025 and 2035 is remembered as the "Prompt Era" of the demoscene - a period as chaotic, brilliant, and constraint-driven as the Amiga days[[1]](#ref-1). Only this time, the hardware wasn't a Commodore 64 with very little RAM; it was an LLM with a context window and a few hundred tokens to spend.
 <br>
 Just as classic demosceners squeezed real-time raymarching and music synthesis into 64KB executables, the new wave set brutal constraints on LLMs. The signature challenge became the "zero-shot demo" - a single prompt, no fine-tuning, no retrieval, no external tools. You got one shot to make the model generate something that took your breath away. Sceners competed to produce entire interactive narratives, generative poems, and self-describing recursive texts from a prompt that fit inside a tweet.
 
@@ -45,8 +46,8 @@ The community coined the term "token budget demos": works constrained to a fixed
 
 <br>
 
-[4]
-![](https://notes.bforge.co/uploads/5bb6122b-e939-43cf-aff4-36a43ca1841b.png)
+[[4]](#ref-4)
+![](https://cdn.bforge.co/5bb6122b-e939-43cf-aff4-36a43ca1841b.png)
 
 A defining aesthetic of the 2028–2031 period was the deliberate exploitation of model hallucination. It's not the first time in history that artists hallucinated to create great stuff (think of the 1970s and the great rock music era). Where early users saw hallucination as a bug, demosceners treated it as the equivalent of the Amiga's hardware sprites glitching into abstract beauty. 
 <br>
@@ -78,15 +79,15 @@ Is this art or garbage?
 
 <br>
 
-How about this one? Can we talk to the vikings from the past this way? [2]
+How about this one? Can we talk to the vikings from the past this way? [[2]](#ref-2)
 
 <br><br>
 
 ## Live promptjockeying
 <br>
 
-[5]
-![](https://notes.bforge.co/uploads/0616e164-1899-46d3-993d-07d7b3c0e872.png)
+[[5]](#ref-5)
+![](https://cdn.bforge.co/0616e164-1899-46d3-993d-07d7b3c0e872.png)
 
 
 By 2032, a live performance culture had emerged. Promptjockeys (PJs) - the demoscene's answer to VJs and DJs - performed on stage at parties, crafting real-time generative text-and-image experiences for audiences of hundreds. The skill wasn't just *what* you prompted, but *when*: reading the crowd, escalating tension through iterative refinement, then landing on an output that made the room erupt. It was improvisational jazz, but the instrument was a stochastic language model.
@@ -104,8 +105,8 @@ Share your thoughts or your visions of the future below, let's see what else cou
 
 <br><br>
 
-* [1] the good ol' times. https://medium.com/@megus/creativity-through-limitation-8-bit-demoscene-68266b918e4a
-* [2] we could, actually. https://valhyr.com/pages/rune-translator
-* [3] source: A variation of the "Wormhole" demo http://maettig.com/?page=Software/DOS/Demoscene
-* [4] source: https://zxart.ee/eng/software/demoscene/art-pack/attributica/
-* [5] source: https://wallpapersafari.com/live-dj-wallpaper/
+* <a name="ref-1"></a>[1] the good ol' times. https://medium.com/@megus/creativity-through-limitation-8-bit-demoscene-68266b918e4a
+* <a name="ref-2"></a>[2] we could, actually. https://valhyr.com/pages/rune-translator
+* <a name="ref-3"></a>[3] source: A variation of the "Wormhole" demo http://maettig.com/?page=Software/DOS/Demoscene
+* <a name="ref-4"></a>[4] source: https://zxart.ee/eng/software/demoscene/art-pack/attributica/
+* <a name="ref-5"></a>[5] source: https://wallpapersafari.com/live-dj-wallpaper/
